@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Cloud;
+    src: url("/Cloud-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: Cloud;
+    font-weight: bold;
+    src: url("/Cloud-Bold.otf") format("opentype");
+}
 p {
     font-size:15px;    
 }
@@ -7,12 +16,14 @@ body{
     text-align:center;
 }
 h1{
+	font-family: Cloud;
     font-size:40px;
     margin-top: 0;
     margin-top:280px;
 }
 
 h2{
+    font-family: Cloud;
     font-size:25px;
     font-weight: bolder;
     color: #79C1FF;
