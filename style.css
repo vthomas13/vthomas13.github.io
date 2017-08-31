@@ -1,0 +1,27 @@
+p {
+    font-size:15px;    
+}
+body{
+    background-color: #4B99E6;
+    color:#fff;
+    text-align:center;
+}
+h1{
+    font-size:40px;
+    margin-top: 0;
+    margin-top:280px;
+}
+
+h2{
+    font-size:25px;
+    font-weight: bolder;
+    color: #79C1FF;
+}
+.link-item{
+    margin-left:10px;
+    margin-right:10px;
+    display: inline-block;
+    color:#9CD1FF;
+    text-decoration: none;
+    font-size: 14px;
+}
