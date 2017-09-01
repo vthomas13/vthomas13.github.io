@@ -1,39 +1,115 @@
 @font-face {
     font-family: Cloud;
-    src: url("/Cloud-Light.otf") format("opentype");
+    src: url("Cloud-Light.otf") format("opentype");
 }
 @font-face {
     font-family: Cloud;
     font-weight: bold;
-    src: url("/Cloud-Bold.otf") format("opentype");
+    src: url("Cloud-Bold.otf") format("opentype");
 }
 p {
-    font-size:15px;    
+    font-size:15px;  
 }
 body{
-    background-color: #4ABDAC;
     color: #DFDCE3;
-    text-align:center;
+    background-color: #4ABDAC;
 }
 h1{
-	font-family: Cloud;
-    font-size:40px;
+	/*font-family: Cloud;*/
+    font-family: 'Julius Sans One', sans-serif;
+    font-size:62px;
     margin-top: 0;
-    margin-top:280px;
+    margin-top:200px;
 }
-
 h2{
-    font-family: Cloud;
-    font-size:25px;
-    font-weight: bolder;
     color: #DFDCE3;
+    font-family: 'Archivo Narrow', sans-serif;
+    /*font-family: Cloud;*/
+    font-size:24px;
+    font-weight: bold;
+    letter-spacing:1;
+}
+.content{    
+    text-align:center;
 }
 .link-item{
+    color: #DFDCE3;
+    font-family: 'Source Sans Pro', sans-serif;
     margin-left:10px;
     margin-right:10px;
     display: inline-block;
-    color: #DFDCE3;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     font-weight:bold;
 }
+.container {
+    z-index: 1;
+    display: inline-block;
+    padding:15px;
+    cursor: pointer;
+    position:absolute;
+}
+/*Menu Bar*/
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #DFDCE3;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+ /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - js variable */
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    /*opacity: .4;*/
+    background-color: #F7B733; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px;/* Place content 60px from the top 
+
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    font-family: 'Julius Sans One', sans-serif;
+}
+/* navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    margin-top: 60px;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align:left;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .container {
+    position: relative;
+    display:inline-block;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
