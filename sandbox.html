@@ -8,8 +8,8 @@
 <script src="Scripts/angular.js"></script>
 <script>
     function Customer($scope) {
-        $scope.CustomerName = "Victor";
-        $scope.CustomerCode = "2223";
+        $scope.CustomerName = "";
+        $scope.CustomerCode = "";
         $scope.Submit = function () {
             if ($scope.CustomerName.length == 0 || $scope.CustomerCode.length == 0) {
                 alert("You must fill in both fields.");
@@ -25,8 +25,8 @@
 <body> 
     <div ng-app="myApp">
         <div id="CustScreen" ng-controller="Customer">
-            Customer Name :- <input ng-model="CustomerName" type="text" id="CustomerName" value="" /> {{CustomerName}} <br />
-            Customer Code :- <input ng-model="CustomerCode" type="text" id="CustomerCode" value="" /> {{CustomerCode}} <br /> 
+            Customer Name : <input ng-model="CustomerName" type="text" id="CustomerName" value="" /> Hello {{CustomerName}} <br />
+            Customer Code : <input ng-model="CustomerCode" type="text" id="CustomerCode" value="" /> {{CustomerCode}} <br /> 
             <input type="button" ng-click="Submit()" value="Submit" />
         </div>
         <br />
