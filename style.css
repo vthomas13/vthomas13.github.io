@@ -17,8 +17,8 @@ body{
 #particles-js {
   z-index: -1;
   position: absolute;
-  width: auto;
-  height: auto;
+  width: 99%;
+  height: 99%;
   background-color: #4ABDAC;
   background-image: url("");
   background-repeat: no-repeat;
